@@ -221,14 +221,11 @@ table{
     transform: scaleY(1);
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    padding: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 130%;
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
 }
 
 .container{
@@ -368,3 +365,31 @@ footer{
      margin-left: 0;
    }
   }
+
+  /* Media queries para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  section {
+    padding: 10px;
+  }
+}
+
+/* Media queries para tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}
